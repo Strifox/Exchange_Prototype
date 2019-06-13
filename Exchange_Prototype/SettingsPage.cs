@@ -28,12 +28,15 @@ namespace Exchange_Prototype
         private void BtnSave_Click(object sender, EventArgs e)
         {
             controller.SaveCommission(TxtBxCommission);
+
+            //Shows the exchangepage again and closes this page.
             Owner.Show();
             Close();
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)
         {
+            //Shows the exchangepage again and closes this page.
             Owner.Show();
             Close();
         }

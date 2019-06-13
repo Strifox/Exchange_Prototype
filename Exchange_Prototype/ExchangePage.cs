@@ -38,7 +38,7 @@ namespace Exchange_Prototype
             string fromValue = CBFromValue.SelectedValue.ToString();
             string toValue = CBToValue.SelectedValue.ToString();
 
-            controller.CalculateAmountToGet(fromValue, toValue);
+            controller.SetRates(fromValue, toValue);
             TxtBoxAmountToGet.Text = controller.AmountToGet.ToString();
         }
 

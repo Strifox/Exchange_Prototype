@@ -22,6 +22,7 @@ namespace Exchange_Prototype
 
         private void ReceiptPage_Load(object sender, EventArgs e)
         {
+            //Give all labels in reciept page a value.
             LBDateTime.Text = DateTime.Now.ToString();
             LBAmountPaid.Text = controller.AmountToPay.ToString();
             LBCommissionPaid.Text = controller.PaidCommission.ToString();
