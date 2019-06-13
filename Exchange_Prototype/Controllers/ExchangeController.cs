@@ -51,6 +51,10 @@ namespace Exchange_Prototype.Controllers
                     JObject jObjectResult = JObject.Parse(result.Result);
                     //Gets the object within the json called rates.
                     JToken rates = jObjectResult["rates"];
+
+                    if (Rates.Count > 0)
+                        Rates.RemoveAt(0);
+
                     Rates.Add(rates);
                 }
             }
@@ -75,8 +79,8 @@ namespace Exchange_Prototype.Controllers
             newExchangeRate = Convert.ToDouble(newValueRate);
 
             double amountToGet = AmountToPay - (Commission / 100);
-            PaidCommission = Math.Round(AmountToPay * (Commission / 100));
-            AmountToGet = Math.Round(amountToGet * newExchangeRate);
+            PaidCommission = Math.Round(AmountToPay * (Commission / 100),3);
+            AmountToGet = Math.Round(amountToGet * newExchangeRate, 3);
         }
 
         public void SetValues(List<Value> values)

@@ -34,7 +34,6 @@
             this.LBToValue = new System.Windows.Forms.Label();
             this.CBToValue = new System.Windows.Forms.ComboBox();
             this.TxtBoxAmountToPay = new System.Windows.Forms.TextBox();
-            this.exchangeControllerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.TxtBoxAmountToGet = new System.Windows.Forms.TextBox();
             this.LBAmount = new System.Windows.Forms.Label();
             this.LBExchanged = new System.Windows.Forms.Label();
@@ -43,8 +42,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.inställningarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LBSameValue = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.exchangeControllerBindingSource)).BeginInit();
+            this.exchangeControllerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exchangeControllerBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // LBFromValue
@@ -96,10 +96,6 @@
             this.TxtBoxAmountToPay.Size = new System.Drawing.Size(163, 20);
             this.TxtBoxAmountToPay.TabIndex = 6;
             this.TxtBoxAmountToPay.TextChanged += new System.EventHandler(this.TxtBoxAmountToPay_TextChanged);
-            // 
-            // exchangeControllerBindingSource
-            // 
-            this.exchangeControllerBindingSource.DataSource = typeof(Exchange_Prototype.Controllers.ExchangeController);
             // 
             // TxtBoxAmountToGet
             // 
@@ -177,6 +173,10 @@
             this.LBSameValue.TabIndex = 14;
             this.LBSameValue.Visible = false;
             // 
+            // exchangeControllerBindingSource
+            // 
+            this.exchangeControllerBindingSource.DataSource = typeof(Exchange_Prototype.Controllers.ExchangeController);
+            // 
             // ExchangePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -197,9 +197,9 @@
             this.Name = "ExchangePage";
             this.Text = "Valuta Växlare";
             this.Load += new System.EventHandler(this.ExchangePage_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.exchangeControllerBindingSource)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exchangeControllerBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
