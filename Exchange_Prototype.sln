@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exchange_Prototype", "Exchange_Prototype\Exchange_Prototype.csproj", "{F133B0DD-AC26-444E-BD33-A468570AC8AD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8B0AA6F4-2B85-40CC-B8BD-D88FA1AE7009} = {8B0AA6F4-2B85-40CC-B8BD-D88FA1AE7009}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Model\Models.csproj", "{8B0AA6F4-2B85-40CC-B8BD-D88FA1AE7009}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{F133B0DD-AC26-444E-BD33-A468570AC8AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F133B0DD-AC26-444E-BD33-A468570AC8AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F133B0DD-AC26-444E-BD33-A468570AC8AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B0AA6F4-2B85-40CC-B8BD-D88FA1AE7009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B0AA6F4-2B85-40CC-B8BD-D88FA1AE7009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B0AA6F4-2B85-40CC-B8BD-D88FA1AE7009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B0AA6F4-2B85-40CC-B8BD-D88FA1AE7009}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
